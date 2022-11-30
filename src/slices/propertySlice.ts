@@ -7,11 +7,13 @@ type PropertyType = {
   loading: boolean;
   property: any[];
   search: string;
+  detailedPage: any;
   filteredProperties: any[];
 };
 const initialState: PropertyType = {
   loading: false,
   property: data,
+  detailedPage: null,
   search: '',
   filteredProperties: data,
 };
@@ -26,9 +28,15 @@ const propertySlice = createSlice({
         name.toLowerCase().includes(state.search.toLowerCase()),
       );
     },
+    setDetailPage(state, action: PayloadAction<string | number>) {
+      const data = state.property.filter(
+        (value) => value.id === action.payload,
+      );
+      state.detailedPage = data[0];
+    },
   },
 });
 
-export const { setSearch } = propertySlice.actions;
+export const { setSearch, setDetailPage } = propertySlice.actions;
 
 export default propertySlice;

@@ -16,6 +16,8 @@ import {
   PaperBgOutterContainer,
 } from './styles';
 import howItworksData from './data';
+import heroimage from '../../../public/images/how-it-works-image.svg';
+import Image from 'next/image';
 
 const index = () => {
   return (
@@ -39,7 +41,7 @@ const index = () => {
         </ContainerWidth>
         <Row className="align-items-center">
           <Col lg="6" md="12">
-            {/* <img src="/images/how-it-works-image.svg" alt="" /> */}
+            <Image src={heroimage} alt="" style={{ height: '100%' }} />
           </Col>
           <CardContainer lg="6" md="12" className="mt-4">
             {howItworksData.map((content) => (

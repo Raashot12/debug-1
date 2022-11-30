@@ -2,9 +2,11 @@
 /** @format */
 import React, { RefObject, useRef } from 'react';
 import styled from '@emotion/styled';
+import { useDispatch } from 'react-redux';
 import ChevronRight from '../Icons/ChevronRight';
 import { SlLocationPin } from 'react-icons/sl';
 import { useRouter } from 'next/router';
+import { setDetailPage } from '../../slices/propertySlice';
 
 type TabPanelProps = {
   tabPanel?: any[];
@@ -20,6 +22,7 @@ const TabPanel = ({
   const contentWrapper: RefObject<any> = useRef(null);
   const [scrollLeft, setScrollLeft] = React.useState(0);
   const router = useRouter();
+  const dispatch = useDispatch();
   const sideScroll = (
     element: HTMLDivElement,
     speed: number,
@@ -40,6 +43,7 @@ const TabPanel = ({
     contentWrapper?.current?.scrollWidth - contentWrapper?.current?.clientWidth;
   const handleClick = (id: number, is_available: boolean) => {
     if (is_available) {
+      dispatch(setDetailPage(id));
       router.push(`/property/${id}`);
     } else {
       alert('Proprty not available');
@@ -68,7 +72,6 @@ const TabPanel = ({
                     <Location>{tabItem?.location}</Location>
                   </div>
                   <section className="d-flex justify-content-between align-items-center mt-3">
-                    BtnApply
                     <Price>
                       ₦{' '}
                       {Number(tabItem.price)
