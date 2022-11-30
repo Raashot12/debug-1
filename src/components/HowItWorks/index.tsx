@@ -39,7 +39,7 @@ const index = () => {
         </ContainerWidth>
         <Row className="align-items-center">
           <Col lg="6" md="12">
-            <img src="/images/how-it-works-image.svg" alt="" />
+            {/* <img src="/images/how-it-works-image.svg" alt="" /> */}
           </Col>
           <CardContainer lg="6" md="12" className="mt-4">
             {howItworksData.map((content) => (
