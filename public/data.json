@@ -401,7 +401,7 @@
     "verified": false,
     "price": "850000",
     "plots": null,
-    "description": "<p>A spacious standard bedroom in a beautiful 5 bedroom duplex shared apartment available for rent </p><p>FEATURES</p><p>Gated estate with uniform security men</p><p>Serene and exclusive neighborhood&nbsp;</p><p>24 hours light supply&nbsp;</p><p>water heater</p><p>High net worth neighborhood&nbsp;</p><p>All rooms en-suite&nbsp;</p><p>Pop ceiling</p><p>New house</p><p>Running water</p><p>Wardrobes are made with high gloss</p><p><br></p><p>total 1.220m</p>",
+    "description": "<h1>A spacious standard bedroom in a beautiful 5 bedroom duplex shared apartment available for rent </h1><h2>FEATURES</h2>Gated estate with uniform security men</ul><>Serene and exclusive neighborhood&nbsp<p>24 hours light supply&nbsp;</p><p>water heater</p><p>High net worth neighborhood&nbsp;</p><p>All rooms en-suite&nbsp;</p><p>Pop ceiling</p><p>New house</p><p>Running water</p><p>Wardrobes are made with high gloss</p><p><br></p><p>total 1.220m</p>",
     "statu": null,
     "sittingroom": 1,
     "image_urls": [
@@ -478,7 +478,7 @@
       "inspection_fee": "2500",
       "id_image_back": "https://firebasestorage.googleapis.com/v0/b/sheruta-prod.appspot.com/o/images%2Fprofile%2F2208%2Fid_0?alt=media&token=8b8d4d21-8b9d-4425-83ae-88ded59ba744",
       "location_keyword": 6,
-      "is_verified": null
+      "is_verified": true
     },
     "categorie": {
       "id": 9,
@@ -647,7 +647,7 @@
       "updated_at": "2022-08-16T14:25:46.472Z",
       "country": 1,
       "state": null,
-      "inspection_count": null,
+      "inspection_count": "4",
       "id_image_front": "i",
       "keywords": null,
       "inspection_fee": "5000",
